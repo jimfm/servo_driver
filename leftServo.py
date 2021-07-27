@@ -16,8 +16,8 @@ if __name__=='__main__':
   pwm = PCA9685(0x40, debug=False)
   pwm.setPWMFreq(50)
   
-  pmin = 400
-  pmax = 1700
+  pmin = 600
+  pmax = 1200
   pstep = 20
   while True:
     for i in range(pmin,pmax,pstep):  
